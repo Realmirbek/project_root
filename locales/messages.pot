@@ -1,0 +1,127 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-11-15 12:00\n"
+"PO-Revision-Date: 2023-11-15 12:00\n"
+"Last-Translator: Your Name <email@example.com>\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Credit Risk Consulting Team"
+msgstr "Команда по кредитному риск-консалтингу"
+
+msgid "IFRS 9, credit scoring, and innovative models for your business"
+msgstr "МСФО 9, кредитный скоринг и инновационные модели для вашего бизнеса"
+
+msgid "Send"
+msgstr "Отправить"
+
+msgid "RU"
+msgstr "РУ"
+
+msgid "EN"
+msgstr "АНГ"
+
+msgid "About us"
+msgstr "О нас"
+
+msgid "Services"
+msgstr "Услуги"
+
+msgid "Our experience"
+msgstr "Наш опыт"
+
+msgid "Results"
+msgstr "Результаты"
+
+msgid "Team"
+msgstr "Команда"
+
+msgid "Contacts"
+msgstr "Контакты"
+
+msgid "We are a team of experts with deep knowledge in IFRS 9 and credit scoring. We work with financial institutions, banks, and corporate clients, implementing innovative risk assessment models that help minimize losses and improve decision-making efficiency."
+msgstr "Мы - команда экспертов с глубокими знаниями в области МСФО 9 и кредитного скоринга. Мы работаем с финансовыми учреждениями, банками и корпоративными клиентами, внедряя инновационные модели оценки рисков, которые помогают минимизировать потери и повысить эффективность принятия решений."
+
+msgid "Clients satisfied with the result"
+msgstr "Довольных клиентов результатом"
+
+msgid "Expertise level in IFRS 9"
+msgstr "Уровень экспертизы в МСФО 9"
+
+msgid "Years of combined experience"
+msgstr "Лет совокупного опыта"
+
+msgid "Unapproved models"
+msgstr "Несогласованных моделей"
+
+msgid "Our services"
+msgstr "Наши услуги"
+
+msgid "Development of PD, LGD, EAD models"
+msgstr "Разработка моделей PD, LGD, EAD"
+
+msgid "We create accurate predictive models tailored to your portfolio and regulatory requirements."
+msgstr "Мы создаем точные прогнозные модели, адаптированные под ваш портфель и регуляторные требования."
+
+msgid "Validation and stress tests"
+msgstr "Валидация и стресс-тесты"
+
+msgid "We conduct deep analysis and validation of existing models, performing stress testing considering macroeconomic factors."
+msgstr "Мы проводим глубокий анализ и валидацию существующих моделей, выполняя стресс-тестирование с учетом макроэкономических факторов."
+
+msgid "Consulting and training"
+msgstr "Консалтинг и обучение"
+
+msgid "We train your team, provide code and documentation, and help implement solutions for independent use."
+msgstr "Мы обучаем вашу команду, предоставляем код и документацию, помогаем внедрить решения для самостоятельного использования."
+
+msgid "Pre-scoring and client scoring"
+msgstr "Прескоринг и скоринг клиентов"
+
+msgid "We use transactional data to improve scoring accuracy and reduce default risks."
+msgstr "Мы используем транзакционные данные для повышения точности скоринга и снижения рисков дефолта."
+
+msgid "Nurbank — PD model implementation"
+msgstr "Нурбанк — внедрение PD-модели"
+
+msgid "Implemented an adapted PD model that reduced defaults by 15% in the first year and improved portfolio quality."
+msgstr "Внедрили адаптированную PD-модель, которая сократила дефолты на 15% в первый год и улучшила качество портфеля."
+
+msgid "Zamanbank — Stress testing"
+msgstr "Заманбанк — стресс-тестирование"
+
+msgid "Conducted comprehensive stress testing with macroeconomic scenarios, helping the bank prepare for potential crises."
+msgstr "Провели комплексное стресс-тестирование с макроэкономическими сценариями, помогли банку подготовиться к потенциальным кризисам."
+
+msgid "Corporate client — Scoring and pricing"
+msgstr "Корпоративный клиент — скоринг и ценообразование"
+
+msgid "Developed a scoring model with dynamic pricing, increasing loan approvals by 20% without additional risk."
+msgstr "Разработали скоринговую модель с динамическим ценообразованием, увеличив одобрение кредитов на 20% без дополнительного риска."
+
+msgid "Our results"
+msgstr "Наши результаты"
+
+msgid "Reduction in defaults"
+msgstr "Снижение дефолтов"
+
+msgid "Successful reduction of client defaults by 15-20% using our models."
+msgstr "Успешное сокращение дефолтов клиентов на 15-20% с использованием наших моделей."
+
+msgid "Faster application processing"
+msgstr "Более быстрая обработка заявок"
+
+msgid "Automated scoring processes applications twice as fast."
+msgstr "Автоматизированный скоринг обрабатывает заявки в два раза быстрее."
+
+msgid "Prediction accuracy"
+msgstr "Точность прогнозов"
+
+msgid "Model accuracy exceeds 80%, confirmed by external audits."
+msgstr "Точность моделей превышает 80%, что подтверждено внешними аудитами."

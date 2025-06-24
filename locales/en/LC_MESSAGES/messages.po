@@ -1,7 +1,16 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-11-15 12:00\n"
+"PO-Revision-Date: 2023-11-15 12:00\n"
+"Last-Translator: Your Name <email@example.com>\n"
+"Language-Team: \n"
+"Language: \en"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Language: en\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 msgid "Credit Risk Consulting Team"
 msgstr "Credit Risk Consulting Team"
@@ -11,3 +20,347 @@ msgstr "IFRS 9, credit scoring, and innovative models for your business"
 
 msgid "Send"
 msgstr "Send"
+
+msgid "RU"
+msgstr "RU"
+
+msgid "EN"
+msgstr "EN"
+
+msgid "About us"
+msgstr "About us"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "Our experience"
+msgstr "Our experience"
+
+msgid "Results"
+msgstr "Results"
+
+msgid "Team"
+msgstr "Team"
+
+msgid "Contacts"
+msgstr "Contacts"
+
+msgid "We are a team of experts with deep knowledge in IFRS 9 and credit scoring. We work with financial institutions, banks, and corporate clients, implementing innovative risk assessment models that help minimize losses and improve decision-making efficiency."
+msgstr "We are a team of experts with deep knowledge in IFRS 9 and credit scoring. We work with financial institutions, banks, and corporate clients, implementing innovative risk assessment models that help minimize losses and improve decision-making efficiency."
+
+msgid "Clients satisfied with the result"
+msgstr "Clients satisfied with the result"
+
+msgid "Expertise level in IFRS 9"
+msgstr "Expertise level in IFRS 9"
+
+msgid "Years of combined experience"
+msgstr "Years of combined experience"
+
+msgid "Unapproved models"
+msgstr "Unapproved models"
+
+msgid "Our services"
+msgstr "Our services"
+
+msgid "Development of PD, LGD, EAD models"
+msgstr "Development of PD, LGD, EAD models"
+
+msgid "We create accurate predictive models tailored to your portfolio and regulatory requirements."
+msgstr "We create accurate predictive models tailored to your portfolio and regulatory requirements."
+
+msgid "Validation and stress tests"
+msgstr "Validation and stress tests"
+
+msgid "We conduct deep analysis and validation of existing models, performing stress testing considering macroeconomic factors."
+msgstr "We conduct deep analysis and validation of existing models, performing stress testing considering macroeconomic factors."
+
+msgid "Consulting and training"
+msgstr "Consulting and training"
+
+msgid "We train your team, provide code and documentation, and help implement solutions for independent use."
+msgstr "We train your team, provide code and documentation, and help implement solutions for independent use."
+
+msgid "Pre-scoring and client scoring"
+msgstr "Pre-scoring and client scoring"
+
+msgid "We use transactional data to improve scoring accuracy and reduce default risks."
+msgstr "We use transactional data to improve scoring accuracy and reduce default risks."
+
+msgid "Nurbank — PD model implementation"
+msgstr "Nurbank — PD model implementation"
+
+msgid "Implemented an adapted PD model that reduced defaults by 15% in the first year and improved portfolio quality."
+msgstr "Implemented an adapted PD model that reduced defaults by 15% in the first year and improved portfolio quality."
+
+msgid "Zamanbank — Stress testing"
+msgstr "Zamanbank — Stress testing"
+
+msgid "Conducted comprehensive stress testing with macroeconomic scenarios, helping the bank prepare for potential crises."
+msgstr "Conducted comprehensive stress testing with macroeconomic scenarios, helping the bank prepare for potential crises."
+
+msgid "Corporate client — Scoring and pricing"
+msgstr "Corporate client — Scoring and pricing"
+
+msgid "Developed a scoring model with dynamic pricing, increasing loan approvals by 20% without additional risk."
+msgstr "Developed a scoring model with dynamic pricing, increasing loan approvals by 20% without additional risk."
+
+msgid "Our results"
+msgstr "Our results"
+
+msgid "Reduction in defaults"
+msgstr "Reduction in defaults"
+
+msgid "Successful reduction of client defaults by 15-20% using our models."
+msgstr "Successful reduction of client defaults by 15-20% using our models."
+
+msgid "Faster application processing"
+msgstr "Faster application processing"
+
+msgid "Automated scoring processes applications twice as fast."
+msgstr "Automated scoring processes applications twice as fast."
+
+msgid "Prediction accuracy"
+msgstr "Prediction accuracy"
+
+msgid "Model accuracy exceeds 80%, confirmed by external audits."
+msgstr "Model accuracy exceeds 80%, confirmed by external audits."
+
+msgid "Collateral valuation model development approach"
+msgstr "Collateral valuation model development approach"
+
+msgid "Data collection"
+msgstr "Data collection"
+
+msgid "Parsing open sources from classifieds websites and Telegram/Instagram channels as selected by the client."
+msgstr "Parsing open sources from classifieds websites and Telegram/Instagram channels as selected by the client."
+
+msgid "Data analysis and model development"
+msgstr "Data analysis and model development"
+
+msgid "Data cleaning from outliers, creating logical rules (distance from center, proximity to metro, greenery level etc.), developing AI-based models."
+msgstr "Data cleaning from outliers, creating logical rules (distance from center, proximity to metro, greenery level etc.), developing AI-based models."
+
+msgid "Production deployment and client training"
+msgstr "Production deployment and client training"
+
+msgid "Model deployment to production, comparison with rule-based models."
+msgstr "Model deployment to production, comparison with rule-based models."
+
+msgid "Daily parsing of additional sources:"
+msgstr "Daily parsing of additional sources:"
+
+msgid "AI models"
+msgstr "AI models"
+
+msgid "Credit Loss Assessment Model (ОКУ) Development Approach"
+msgstr "Credit Loss Assessment Model (ОКУ) Development Approach"
+
+msgid "PD Models Development"
+msgstr "PD Models Development"
+
+msgid "Current Models Backtesting"
+msgstr "Current Models Backtesting"
+
+msgid "Model-to-Data Fit Test"
+msgstr "Model-to-Data Fit Test"
+
+msgid "Data Structure Analysis"
+msgstr "Data Structure Analysis"
+
+msgid "Data Variability Analysis"
+msgstr "Data Variability Analysis"
+
+msgid "Data Grouping and Transformation"
+msgstr "Data Grouping and Transformation"
+
+msgid "Model Building"
+msgstr "Model Building"
+
+msgid "Model Stress Testing"
+msgstr "Model Stress Testing"
+
+msgid "Recommendations and Conclusions"
+msgstr "Recommendations and Conclusions"
+
+msgid "How our loan process works"
+msgstr "How our loan process works"
+
+msgid "Loan application"
+msgstr "Loan application"
+
+msgid "Amount and term selection"
+msgstr "Amount and term selection"
+
+msgid "Credit scoring"
+msgstr "Credit scoring"
+
+msgid "Interest rate calculation"
+msgstr "Interest rate calculation"
+
+msgid "Client <strong>DOES NOT</strong> accept the rate"
+msgstr "Client <strong>DOES NOT</strong> accept the rate"
+
+msgid "Client accepts the rate"
+msgstr "Client accepts the rate"
+
+msgid "Amount and term selection (repeat)"
+msgstr "Amount and term selection (repeat)"
+
+msgid "Loan issuance"
+msgstr "Loan issuance"
+
+msgid "Our Team"
+msgstr "Our Team"
+
+msgid "Role:"
+msgstr "Role:"
+
+msgid "Senior Partner, Risk Modeler"
+msgstr "Senior Partner, Risk Modeler"
+
+msgid "Specialization:"
+msgstr "Specialization:"
+
+msgid "PD, LGD, EAD, auditor coordination, AQR"
+msgstr "PD, LGD, EAD, auditor coordination, AQR"
+
+msgid "Project:"
+msgstr "Project:"
+
+msgid "IFRS 9 Models Implementation"
+msgstr "IFRS 9 Models Implementation"
+
+msgid "Implemented in 3 banks with assets > $1B. Models passed audit without issues."
+msgstr "Implemented in 3 banks with assets > $1B. Models passed audit without issues."
+
+msgid "IFRS Standards Expert"
+msgstr "IFRS Standards Expert"
+
+msgid "Complex standards interpretation, documentation, auditor communication"
+msgstr "Complex standards interpretation, documentation, auditor communication"
+
+msgid "External Audit Support"
+msgstr "External Audit Support"
+
+msgid "Prepared correct interpretations of IFRS 9, IAS 39 standards, ensured compliance with EY and KPMG requirements."
+msgstr "Prepared correct interpretations of IFRS 9, IAS 39 standards, ensured compliance with EY and KPMG requirements."
+
+msgid "Data Scientist"
+msgstr "Data Scientist"
+
+msgid "Scoring, ML models, collateral, churn prediction, NPL optimization"
+msgstr "Scoring, ML models, collateral, churn prediction, NPL optimization"
+
+msgid "Python Credit Scoring"
+msgstr "Python Credit Scoring"
+
+msgid "Developed model with ROC-AUC 0.83 for microfinance organization, reduced delinquency by 12%."
+msgstr "Developed model with ROC-AUC 0.83 for microfinance organization, reduced delinquency by 12%."
+
+msgid "Technical Advisor"
+msgstr "Technical Advisor"
+
+msgid "Mathematical logic, statistical correctness, team training"
+msgstr "Mathematical logic, statistical correctness, team training"
+
+msgid "Statistical Model Validation"
+msgstr "Statistical Model Validation"
+
+msgid "Conducted back-testing, Gini, KS-statistics and stability analysis. All metrics in green zone."
+msgstr "Conducted back-testing, Gini, KS-statistics and stability analysis. All metrics in green zone."
+
+msgid "Goals and Objectives"
+msgstr "Goals and Objectives"
+
+msgid "Improving Prediction Accuracy"
+msgstr "Improving Prediction Accuracy"
+
+msgid "Reduce delinquency rates and increase recovery by applying precise risk and customer behavior assessment models."
+msgstr "Reduce delinquency rates and increase recovery by applying precise risk and customer behavior assessment models."
+
+msgid "IFRS 9 Compliance"
+msgstr "IFRS 9 Compliance"
+
+msgid "Ensure correct calculation of expected credit losses in accordance with international standards."
+msgstr "Ensure correct calculation of expected credit losses in accordance with international standards."
+
+msgid "Decision Automation"
+msgstr "Decision Automation"
+
+msgid "Optimize scoring and underwriting processes by reducing manual application processing."
+msgstr "Optimize scoring and underwriting processes by reducing manual application processing."
+
+msgid "Improving Control and Transparency"
+msgstr "Improving Control and Transparency"
+
+msgid "Make models interpretable and easily verifiable for internal and external audits (auditors and regulators)."
+msgstr "Make models interpretable and easily verifiable for internal and external audits (auditors and regulators)."
+
+msgid "Supporting Strategic Decisions"
+msgstr "Supporting Strategic Decisions"
+
+msgid "Use analytical tools and stress testing for portfolio management and executive-level decision making."
+msgstr "Use analytical tools and stress testing for portfolio management and executive-level decision making."
+
+msgid "Client Team Development"
+msgstr "Client Team Development"
+
+msgid "Transfer knowledge, train personnel and provide long-term support for implemented solutions."
+msgstr "Transfer knowledge, train personnel and provide long-term support for implemented solutions."
+
+msgid "How It Works"
+msgstr "How It Works"
+
+msgid "Business Task Analysis"
+msgstr "Business Task Analysis"
+
+msgid "We discuss project goals, data, auditor requirements and your market specifics."
+msgstr "We discuss project goals, data, auditor requirements and your market specifics."
+
+msgid "Model Development"
+msgstr "Model Development"
+
+msgid "We build PD, LGD, EAD models, credit scoring or other algorithms depending on the task."
+msgstr "We build PD, LGD, EAD models, credit scoring or other algorithms depending on the task."
+
+msgid "Validation and Approval"
+msgstr "Validation and Approval"
+
+msgid "We test model accuracy, conduct stress-tests, coordinate with regulators and auditors."
+msgstr "We test model accuracy, conduct stress-tests, coordinate with regulators and auditors."
+
+msgid "Implementation and Training"
+msgstr "Implementation and Training"
+
+msgid "We transfer code and documentation, conduct team training and assist with implementation."
+msgstr "We transfer code and documentation, conduct team training and assist with implementation."
+
+msgid "Contact Us"
+msgstr "Contact Us"
+
+msgid "Phone"
+msgstr "Phone"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "The price is calculated individually after discussion."
+msgstr "The price is calculated individually after discussion."
+
+msgid "Your name"
+msgstr "Your name"
+
+msgid "Email for contact"
+msgstr "Email for contact"
+
+msgid "phone"
+msgstr "phone"
+
+msgid "Your message"
+msgstr "Your message"
+
+msgid "Send"
+msgstr "Send"
+
+

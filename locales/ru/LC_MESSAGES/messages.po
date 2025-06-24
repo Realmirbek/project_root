@@ -1,0 +1,378 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-11-15 12:00\n"
+"PO-Revision-Date: 2023-11-15 12:00\n"
+"Last-Translator: Your Name <email@example.com>\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Credit Risk Consulting Team"
+msgstr "Команда по кредитному риск-консалтингу"
+
+msgid "IFRS 9, credit scoring, and innovative models for your business"
+msgstr "МСФО 9, кредитный скоринг и инновационные модели для вашего бизнеса"
+
+msgid "Send"
+msgstr "Отправить"
+
+msgid "RU"
+msgstr "РУ"
+
+msgid "EN"
+msgstr "АНГ"
+
+msgid "About us"
+msgstr "О нас"
+
+msgid "Services"
+msgstr "Услуги"
+
+msgid "Our experience"
+msgstr "Наш опыт"
+
+msgid "Results"
+msgstr "Результаты"
+
+msgid "Team"
+msgstr "Команда"
+
+msgid "Contacts"
+msgstr "Контакты"
+
+msgid "We are a team of experts with deep knowledge in IFRS 9 and credit scoring. We work with financial institutions, banks, and corporate clients, implementing innovative risk assessment models that help minimize losses and improve decision-making efficiency."
+msgstr "Мы - команда экспертов с глубокими знаниями в области МСФО 9 и кредитного скоринга. Мы работаем с финансовыми учреждениями, банками и корпоративными клиентами, внедряя инновационные модели оценки рисков, которые помогают минимизировать потери и повысить эффективность принятия решений."
+
+msgid "Clients satisfied with the result"
+msgstr "Довольных клиентов результатом"
+
+msgid "Expertise level in IFRS 9"
+msgstr "Уровень экспертизы в МСФО 9"
+
+msgid "Years of combined experience"
+msgstr "Лет совокупного опыта"
+
+msgid "Unapproved models"
+msgstr "Несогласованных моделей"
+
+msgid "Our services"
+msgstr "Наши услуги"
+
+msgid "Development of PD, LGD, EAD models"
+msgstr "Разработка моделей PD, LGD, EAD"
+
+msgid "We create accurate predictive models tailored to your portfolio and regulatory requirements."
+msgstr "Мы создаем точные прогнозные модели, адаптированные под ваш портфель и регуляторные требования."
+
+msgid "Validation and stress tests"
+msgstr "Валидация и стресс-тесты"
+
+msgid "We conduct deep analysis and validation of existing models, performing stress testing considering macroeconomic factors."
+msgstr "Мы проводим глубокий анализ и валидацию существующих моделей, выполняя стресс-тестирование с учетом макроэкономических факторов."
+
+msgid "Consulting and training"
+msgstr "Консалтинг и обучение"
+
+msgid "We train your team, provide code and documentation, and help implement solutions for independent use."
+msgstr "Мы обучаем вашу команду, предоставляем код и документацию, помогаем внедрить решения для самостоятельного использования."
+
+msgid "Pre-scoring and client scoring"
+msgstr "Прескоринг и скоринг клиентов"
+
+msgid "We use transactional data to improve scoring accuracy and reduce default risks."
+msgstr "Мы используем транзакционные данные для повышения точности скоринга и снижения рисков дефолта."
+
+msgid "Nurbank — PD model implementation"
+msgstr "Нурбанк — внедрение PD-модели"
+
+msgid "Implemented an adapted PD model that reduced defaults by 15% in the first year and improved portfolio quality."
+msgstr "Внедрили адаптированную PD-модель, которая сократила дефолты на 15% в первый год и улучшила качество портфеля."
+
+msgid "Zamanbank — Stress testing"
+msgstr "Заманбанк — стресс-тестирование"
+
+msgid "Conducted comprehensive stress testing with macroeconomic scenarios, helping the bank prepare for potential crises."
+msgstr "Провели комплексное стресс-тестирование с макроэкономическими сценариями, помогли банку подготовиться к потенциальным кризисам."
+
+msgid "Corporate client — Scoring and pricing"
+msgstr "Корпоративный клиент — скоринг и ценообразование"
+
+msgid "Developed a scoring model with dynamic pricing, increasing loan approvals by 20% without additional risk."
+msgstr "Разработали скоринговую модель с динамическим ценообразованием, увеличив одобрение кредитов на 20% без дополнительного риска."
+
+msgid "Our results"
+msgstr "Наши результаты"
+
+msgid "Reduction in defaults"
+msgstr "Снижение дефолтов"
+
+msgid "Successful reduction of client defaults by 15-20% using our models."
+msgstr "Успешное сокращение дефолтов клиентов на 15-20% с использованием наших моделей."
+
+msgid "Faster application processing"
+msgstr "Более быстрая обработка заявок"
+
+msgid "Automated scoring processes applications twice as fast."
+msgstr "Автоматизированный скоринг обрабатывает заявки в два раза быстрее."
+
+msgid "Prediction accuracy"
+msgstr "Точность прогнозов"
+
+msgid "Model accuracy exceeds 80%, confirmed by external audits."
+msgstr "Точность моделей превышает 80%, что подтверждено внешними аудитами."
+
+msgid "Collateral valuation model development approach"
+msgstr "Подход к разработке модели оценки залогов"
+
+msgid "Data collection"
+msgstr "Сбор данных"
+
+msgid "Parsing open sources from classifieds websites and Telegram/Instagram channels as selected by the client."
+msgstr "Парсинг открытых источников с сайтов объявлений и Telegram/Instagram каналов по выбору клиента."
+
+msgid "Data analysis and model development"
+msgstr "Анализ данных и разработка модели"
+
+msgid "Data cleaning from outliers, creating logical rules (distance from center, proximity to metro, greenery level etc.), developing AI-based models."
+msgstr "Очистка данных от выбросов, создание логических правил (удалённость от центра, близость к метро, степень озеленения и т.п.), создание моделей на основе ИИ."
+
+msgid "Production deployment and client training"
+msgstr "Вывод в производство и обучение клиентов"
+
+msgid "Model deployment to production, comparison with rule-based models."
+msgstr "Вывод модели в производство, сравнение с rule-based моделями."
+
+msgid "Daily parsing of additional sources:"
+msgstr "Ежедневный парсинг дополнительных источников:"
+
+msgid "AI models"
+msgstr "Модели ИИ"
+
+msgid "Credit Loss Assessment Model (ОКУ) Development Approach"
+msgstr "Подход к разработке модели оценки кредитных убытков (ОКУ)"
+
+msgid "PD Models Development"
+msgstr "Разработка PD моделей"
+
+msgid "Current Models Backtesting"
+msgstr "Backtesting текущих моделей"
+
+msgid "Model-to-Data Fit Test"
+msgstr "Тест на соответствие модели данным"
+
+msgid "Data Structure Analysis"
+msgstr "Анализ структуры данных"
+
+msgid "Data Variability Analysis"
+msgstr "Анализ изменчивости данных"
+
+msgid "Data Grouping and Transformation"
+msgstr "Группировка и трансформация данных"
+
+msgid "Model Building"
+msgstr "Построение модели"
+
+msgid "Model Stress Testing"
+msgstr "Стресс-тестирование модели"
+
+msgid "Recommendations and Conclusions"
+msgstr "Рекомендации и выводы"
+
+msgid "How our loan process works"
+msgstr "Как работает наш процесс кредитования"
+
+msgid "Loan application"
+msgstr "Кредитная заявка"
+
+msgid "Amount and term selection"
+msgstr "Выбор суммы и срока"
+
+msgid "Credit scoring"
+msgstr "Кредитный скоринг"
+
+msgid "Interest rate calculation"
+msgstr "Расчет процентной ставки"
+
+msgid "Client <strong>DOES NOT</strong> accept the rate"
+msgstr "Клиент <strong>НЕ</strong> соглашается на ставку"
+
+msgid "Client accepts the rate"
+msgstr "Клиент соглашается на ставку"
+
+msgid "Amount and term selection (repeat)"
+msgstr "Выбор суммы и срока (повтор)"
+
+msgid "Loan issuance"
+msgstr "Выдача кредита"
+
+msgid "Our Team"
+msgstr "Наша команда"
+
+msgid "Role:"
+msgstr "Роль:"
+
+msgid "Senior Partner, Risk Modeler"
+msgstr "Старший партнёр, Risk-модельер"
+
+msgid "Specialization:"
+msgstr "Специализация:"
+
+msgid "PD, LGD, EAD, auditor coordination, AQR"
+msgstr "PD, LGD, EAD, согласование с аудиторами, AQR"
+
+msgid "Project:"
+msgstr "Проект:"
+
+msgid "IFRS 9 Models Implementation"
+msgstr "Внедрение моделей по МСФО 9"
+
+msgid "Implemented in 3 banks with assets > $1B. Models passed audit without issues."
+msgstr "Реализовано в 3 банках с активами > 1 млрд USD. Модели прошли аудит без нареканий."
+
+msgid "IFRS Standards Expert"
+msgstr "Эксперт по стандартам IFRS"
+
+msgid "Complex standards interpretation, documentation, auditor communication"
+msgstr "Трактовка сложных стандартов, документация, взаимодействие с аудиторами"
+
+msgid "External Audit Support"
+msgstr "Поддержка при внешнем аудите"
+
+msgid "Prepared correct interpretations of IFRS 9, IAS 39 standards, ensured compliance with EY and KPMG requirements."
+msgstr "Подготовлены корректные трактовки стандартов IFRS 9, IAS 39, обеспечено соответствие требованиям EY и KPMG."
+
+msgid "Data Scientist"
+msgstr "Data Scientist"
+
+msgid "Scoring, ML models, collateral, churn prediction, NPL optimization"
+msgstr "Скоринг, ML-модели, залоги, прогноз оттока, оптимизация NPL"
+
+msgid "Python Credit Scoring"
+msgstr "Кредитный скоринг на Python"
+
+msgid "Developed model with ROC-AUC 0.83 for microfinance organization, reduced delinquency by 12%."
+msgstr "Разработана модель с ROC-AUC 0.83 для микрофинансовой организации, снижена просрочка на 12%."
+
+msgid "Technical Advisor"
+msgstr "Технический советник"
+
+msgid "Mathematical logic, statistical correctness, team training"
+msgstr "Математическая логика, статистическая корректность, обучение команды"
+
+msgid "Statistical Model Validation"
+msgstr "Статистическая валидация моделей"
+
+msgid "Conducted back-testing, Gini, KS-statistics and stability analysis. All metrics in green zone."
+msgstr "Проведены back-testing, Gini, KS-статистика и stability анализ. Все метрики — в зелёной зоне."
+
+msgid "Goals and Objectives"
+msgstr "Цели и задачи"
+
+msgid "Improving Prediction Accuracy"
+msgstr "Повышение точности прогнозов"
+
+msgid "Reduce delinquency rates and increase recovery by applying precise risk and customer behavior assessment models."
+msgstr "Снизить уровень просрочки и увеличить возвратность, применяя точные модели оценки риска и клиентского поведения."
+
+msgid "IFRS 9 Compliance"
+msgstr "Соответствие требованиям МСФО 9"
+
+msgid "Ensure correct calculation of expected credit losses in accordance with international standards."
+msgstr "Обеспечить корректный расчёт ожидаемых кредитных убытков в соответствии с международными стандартами."
+
+msgid "Decision Automation"
+msgstr "Автоматизация принятия решений"
+
+msgid "Optimize scoring and underwriting processes by reducing manual application processing."
+msgstr "Оптимизировать процесс скоринга и андеррайтинга, снизив долю ручной обработки заявок."
+
+msgid "Improving Control and Transparency"
+msgstr "Улучшение контроля и прозрачности"
+
+msgid "Make models interpretable and easily verifiable for internal and external audits (auditors and regulators)."
+msgstr "Сделать модели интерпретируемыми и легко проверяемыми для внутренних и внешних проверок (аудиторов и регуляторов)."
+
+msgid "Supporting Strategic Decisions"
+msgstr "Поддержка стратегических решений"
+
+msgid "Use analytical tools and stress testing for portfolio management and executive-level decision making."
+msgstr "Использовать аналитические инструменты и стресс-тестирование для управления портфелем и принятия решений на уровне топ-менеджмента."
+
+msgid "Client Team Development"
+msgstr "Развитие команды клиента"
+
+msgid "Transfer knowledge, train personnel and provide long-term support for implemented solutions."
+msgstr "Передать знания, обучить персонал и обеспечить долгосрочную поддержку внедрённых решений."
+
+
+msgid "How It Works"
+msgstr "Как это работает"
+
+msgid "Business Task Analysis"
+msgstr "Анализ бизнес-задачи"
+
+msgid "We discuss project goals, data, auditor requirements and your market specifics."
+msgstr "Обсуждаем цели проекта, данные, требования аудиторов и особенности вашего рынка."
+
+msgid "Model Development"
+msgstr "Разработка модели"
+
+msgid "We build PD, LGD, EAD models, credit scoring or other algorithms depending on the task."
+msgstr "Строим PD, LGD, EAD модели, кредитный скоринг или другие алгоритмы в зависимости от задачи."
+
+msgid "Validation and Approval"
+msgstr "Валидация и согласование"
+
+msgid "We test model accuracy, conduct stress-tests, coordinate with regulators and auditors."
+msgstr "Тестируем точность модели, проводим stress-тесты, согласовываем с регуляторами и аудиторами."
+
+msgid "Implementation and Training"
+msgstr "Внедрение и обучение"
+
+msgid "We transfer code and documentation, conduct team training and assist with implementation."
+msgstr "Передаём код, документацию, проводим обучение команды и помогаем с внедрением."
+
+msgid "Contact Us"
+msgstr "Контакты"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "The price is calculated individually after discussion."
+msgstr "Цена рассчитывается индивидуально после обсуждения."
+
+msgid "Your name"
+msgstr "Ваше имя"
+
+msgid "Email for contact"
+msgstr "Email для связи"
+
+msgid "Your message"
+msgstr "Ваше сообщение"
+
+msgid "phone"
+msgstr "Номер телефона"
+
+msgid "Send"
+msgstr "Отправить"
+
