@@ -363,4 +363,5 @@ msgstr "Your message"
 msgid "Send"
 msgstr "Send"
 
-
+msgid "The price is calculated individually after discussion"
+msgstr "The price is calculated individually after discussion"
