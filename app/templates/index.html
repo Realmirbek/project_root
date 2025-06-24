@@ -1,135 +1,205 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="{{ lang }}">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Современное коммерческое предложение</title>
-<link rel="stylesheet" href="/static/css/style.css">
+  <meta charset="UTF-8" />
+  <title>{{ _('Credit Risk Consulting Team') }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
 
-<header>
-  <h1>Консалтинговая команда по кредитному риску</h1>
-  <p>МСФО 9, кредитный скоринг и инновационные модели для вашего бизнеса</p>
+<!-- Добавленный блок с заголовком и кнопкой -->
+<div class="header-top">
+  <h1 class="main-title">{{ _('Credit Risk Consulting Team') }}</h1>
+  <div class="header-buttons">
+    <a href="#contacts" class="contact-button">{{ _('Contacts') }}</a>
+    <a href="#contacts" class="contact-button secondary">{{ _('Request Consultation') }}</a>
+  </div>
+</div>
+
+<header class="page-header">
+  <div class="language-switch">
+    <a href="/lang/ru">🇷🇺 {{ _('RU') }}</a> | <a href="/lang/en">🇺🇸 {{ _('EN') }}</a>
+  </div>
+  <div class="header-content">
+    <p class="header-text">{{ _('IFRS 9, credit scoring, and innovative models for your business') }}</p>
+  </div>
 </header>
 
 <nav>
-  <a href="#intro" class="active">О нас</a>
-  <a href="#services">Услуги</a>
-  <a href="#cases">Наш опыт</a>
-  <a href="#stats">Результаты</a>
-  <a href="#team">Команда</a>
-  <a href="#contacts">Контакты</a>
+  <a href="#intro" class="active">{{ _('About us') }}</a>
+  <a href="#services">{{ _('Services') }}</a>
+  <a href="#cases">{{ _('Our experience') }}</a>
+  <a href="#stats">{{ _('Results') }}</a>
+  <a href="#team">{{ _('Team') }}</a>
+  <a href="#team">{{ _('Team') }}</a>
+  <a href="#contacts">{{ _('Contacts') }}</a>
+    <a href="https://www.linkedin.com/ваш_профиль" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+    <svg class="linkedin-icon" viewBox="0 0 24 24" width="24" height="24">
+      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+    </svg>
+    LinkedIn
+  </a>
 </nav>
 
 <main>
 
+
+
+<!-- Секция "About us" -->
 <section id="intro" data-animate>
-  <h2>О нас</h2>
-  <p>Мы — команда экспертов с глубокими знаниями в области МСФО 9 и кредитного скоринга. Работаем с финансовыми учреждениями, банками и корпоративными клиентами, внедряя инновационные модели оценки риска, которые помогают минимизировать потери и повысить эффективность принятия решений.</p>
-    <div class="about-facts">
-  <div class="fact">
-    <div class="fact-number">96%</div>
-    <div class="fact-label">Клиентов довольны результатом</div>
+  <h2>{{ _('About us') }}</h2>
+  <p>{{ _('We are a team of experts with deep knowledge in IFRS 9 and credit scoring. We work with financial institutions, banks, and corporate clients, implementing innovative risk assessment models that help minimize losses and improve decision-making efficiency.') }}</p>
+  <div class="about-facts">
+    <div class="fact">
+      <div class="fact-number">96%</div>
+      <div class="fact-label">{{ _('Clients satisfied with the result') }}</div>
+    </div>
+    <div class="fact">
+      <div class="fact-number">100%</div>
+      <div class="fact-label">{{ _('Expertise level in IFRS 9') }}</div>
+    </div>
+    <div class="fact">
+      <div class="fact-number">15+</div>
+      <div class="fact-label">{{ _('Years of combined experience') }}</div>
+    </div>
+    <div class="fact">
+      <div class="fact-number">0</div>
+      <div class="fact-label">{{ _('Unapproved models') }}</div>
+    </div>
   </div>
-  <div class="fact">
-    <div class="fact-number">100%</div>
-    <div class="fact-label">Уровень экспертности в МСФО 9</div>
-  </div>
-  <div class="fact">
-    <div class="fact-number">15+</div>
-    <div class="fact-label">лет совокупного опыта</div>
-  </div>
-  <div class="fact">
-    <div class="fact-number">0</div>
-    <div class="fact-label">несогласованных моделей</div>
-  </div>
-</div>
 </section>
 
-<section id="services" data-animate>
-  <h2>Наши услуги</h2>
+<section id="vacancies" data-animate>
+  <h2>{{ _('Vacancies') }}</h2>
+  <p>{{ _('We are growing and looking for talented professionals to join our team in the following positions:') }}</p>
 
+  <div class="vacancies-list">
+    <!-- Вакансия 1 -->
+    <div class="vacancy">
+      <h3>{{ _('Risk Model Developer') }}</h3>
+      <div class="vacancy-details">
+        <div class="detail">
+          <div class="detail-icon">📊</div>
+          <div class="detail-text">{{ _('Development of PD/LGD/EAD models') }}</div>
+        </div>
+        <div class="detail">
+          <div class="detail-icon">💻</div>
+          <div class="detail-text">Python, R, SQL</div>
+        </div>
+        <div class="detail">
+          <div class="detail-icon">🏢</div>
+          <div class="detail-text">{{ _('Remote or Almaty office') }}</div>
+        </div>
+      </div>
+      <a href="#contacts" class="apply-button">{{ _('Apply now') }}</a>
+    </div>
+
+    <!-- Вакансия 2 -->
+    <div class="vacancy">
+      <h3>{{ _('IFRS 9 Consultant') }}</h3>
+      <div class="vacancy-details">
+        <div class="detail">
+          <div class="detail-icon">📝</div>
+          <div class="detail-text">{{ _('Implementation of IFRS 9 standards') }}</div>
+        </div>
+        <div class="detail">
+          <div class="detail-icon">🏦</div>
+          <div class="detail-text">{{ _('Banking sector experience') }}</div>
+        </div>
+        <div class="detail">
+          <div class="detail-icon">🌍</div>
+          <div class="detail-text">{{ _('Business trips required') }}</div>
+        </div>
+      </div>
+      <a href="#contacts" class="apply-button">{{ _('Apply now') }}</a>
+    </div>
+  </div>
+</section>
+
+<!-- Секция "Services" -->
+<section id="services" data-animate>
+  <h2>{{ _('Our services') }}</h2>
   <div class="cards">
     <div class="card">
       <div class="card-icon">📊</div>
-      <div class="card-title">Разработка моделей PD, LGD, EAD</div>
-      <div class="card-desc">Создаем точные прогнозные модели, адаптированные под специфику вашего портфеля и требований регуляторов.</div>
+      <div class="card-title">{{ _('Development of PD, LGD, EAD models') }}</div>
+      <div class="card-desc">{{ _('We create accurate predictive models tailored to your portfolio and regulatory requirements.') }}</div>
     </div>
     <div class="card">
       <div class="card-icon">⚙️</div>
-      <div class="card-title">Валидация и стресс-тесты</div>
-      <div class="card-desc">Проводим глубокий анализ и валидацию существующих моделей, выполняем стресс-тестирование с учетом макроэкономических факторов.</div>
+      <div class="card-title">{{ _('Validation and stress tests') }}</div>
+      <div class="card-desc">{{ _('We conduct deep analysis and validation of existing models, performing stress testing considering macroeconomic factors.') }}</div>
     </div>
     <div class="card">
       <div class="card-icon">💼</div>
-      <div class="card-title">Консалтинг и обучение</div>
-      <div class="card-desc">Обучаем сотрудников, передаем код и документацию, помогаем внедрить решения и работать с ними самостоятельно.</div>
+      <div class="card-title">{{ _('Consulting and training') }}</div>
+      <div class="card-desc">{{ _('We train your team, provide code and documentation, and help implement solutions for independent use.') }}</div>
     </div>
     <div class="card">
       <div class="card-icon">🔍</div>
-      <div class="card-title">Прескоринг и скоринг клиентов</div>
-      <div class="card-desc">Используем транзакционные данные для повышения точности скоринга и сокращения рисков невозврата.</div>
+      <div class="card-title">{{ _('Pre-scoring and client scoring') }}</div>
+      <div class="card-desc">{{ _('We use transactional data to improve scoring accuracy and reduce default risks.') }}</div>
     </div>
   </div>
 </section>
 
 <section id="cases" data-animate>
-  <h2>Реальные кейсы</h2>
+  <h2>{{ _('Our experience') }}</h2>
   <div class="case">
-    <h3>Нурбанк — Внедрение PD-модели</h3>
-    <p>Внедрили адаптированную PD-модель, которая сократила уровень дефолтов на 15% за первый год и повысила качество кредитного портфеля.</p>
+    <h3>{{ _('Nurbank — PD model implementation') }}</h3>
+    <p>{{ _('Implemented an adapted PD model that reduced defaults by 15% in the first year and improved portfolio quality.') }}</p>
   </div>
   <div class="case">
-    <h3>Заманбанк — Стресс-тестирование</h3>
-    <p>Провели комплексное стресс-тестирование с использованием макроэкономических сценариев, что помогло банку подготовиться к возможным кризисам.</p>
+    <h3>{{ _('Zamanbank — Stress testing') }}</h3>
+    <p>{{ _('Conducted comprehensive stress testing with macroeconomic scenarios, helping the bank prepare for potential crises.') }}</p>
   </div>
   <div class="case">
-    <h3>Корпоративный клиент — Скоринг и ценообразование</h3>
-    <p>Разработали скоринговую модель с динамическим ценообразованием, что позволило увеличить одобрения кредитов на 20% без роста риска.</p>
+    <h3>{{ _('Corporate client — Scoring and pricing') }}</h3>
+    <p>{{ _('Developed a scoring model with dynamic pricing, increasing loan approvals by 20% without additional risk.') }}</p>
   </div>
 </section>
 
+<!-- Секция "Results" -->
 <section id="stats" data-animate>
-  <h2>Наши результаты</h2>
+  <h2>{{ _('Our results') }}</h2>
   <div class="stats">
     <div class="stat-item">
-      <div class="stat-title">Снижение дефолтов</div>
+      <div class="stat-title">{{ _('Reduction in defaults') }}</div>
       <div class="progress-bar">
         <div class="progress-fill" style="width: 85%;"></div>
       </div>
-      <p>Успешное сокращение дефолтов клиентов на 15-20% по нашим моделям.</p>
+      <p>{{ _('Successful reduction of client defaults by 15-20% using our models.') }}</p>
     </div>
     <div class="stat-item">
-      <div class="stat-title">Ускорение обработки заявок</div>
+      <div class="stat-title">{{ _('Faster application processing') }}</div>
       <div class="progress-bar">
         <div class="progress-fill" style="width: 90%;"></div>
       </div>
-      <p>Автоматизация скоринга позволяет обрабатывать заявки в 2 раза быстрее.</p>
+      <p>{{ _('Automated scoring processes applications twice as fast.') }}</p>
     </div>
     <div class="stat-item">
-      <div class="stat-title">Точность прогнозов</div>
+      <div class="stat-title">{{ _('Prediction accuracy') }}</div>
       <div class="progress-bar">
         <div class="progress-fill" style="width: 80%;"></div>
       </div>
-      <p>Точность моделей превышает 80%, что подтверждается внешним аудитом.</p>
+      <p>{{ _('Model accuracy exceeds 80%, confirmed by external audits.') }}</p>
     </div>
   </div>
 </section>
 
-
 <section id="collateral-approach-vertical">
-  <h2>Подход к разработке модели оценки залогов</h2>
+  <h2>{{ _('Collateral valuation model development approach') }}</h2>
   <div class="vertical-steps">
 
     <div class="step">
       <div class="step-header">
         <div class="step-number">01</div>
         <div class="step-icon">📥</div>
-        <div class="step-title">Сбор данных</div>
+        <div class="step-title">{{ _('Data collection') }}</div>
       </div>
       <div class="step-desc">
-        Парсинг открытых источников с сайтов объявлений и Telegram/Instagram каналов по выбору клиента.
+        {{ _('Parsing open sources from classifieds websites and Telegram/Instagram channels as selected by the client.') }}
       </div>
     </div>
 
@@ -139,10 +209,10 @@
       <div class="step-header">
         <div class="step-number">02</div>
         <div class="step-icon">🔍</div>
-        <div class="step-title">Анализ данных и разработка модели</div>
+        <div class="step-title">{{ _('Data analysis and model development') }}</div>
       </div>
       <div class="step-desc">
-        Очистка данных от выбросов, создание логических правил (удалённость от центра, близость к метро, степень озеленения и т.п.), создание моделей на основе ИИ.
+        {{ _('Data cleaning from outliers, creating logical rules (distance from center, proximity to metro, greenery level etc.), developing AI-based models.') }}
       </div>
     </div>
 
@@ -152,15 +222,15 @@
       <div class="step-header">
         <div class="step-number">03</div>
         <div class="step-icon">🚀</div>
-        <div class="step-title">Вывод в производство и обучение клиентов</div>
+        <div class="step-title">{{ _('Production deployment and client training') }}</div>
       </div>
       <div class="step-desc">
-        Вывод модели в производство, сравнение с rule-based моделями.<br>
-        Ежедневный парсинг дополнительных источников:
+        {{ _('Model deployment to production, comparison with rule-based models.') }}<br>
+        {{ _('Daily parsing of additional sources:') }}
         <div class="substeps">
           <div class="substep"><span class="sub-icon">📱</span> Telegram / Instagram</div>
           <div class="substep"><span class="sub-icon">🌐</span> Google Chrome / Google Maps</div>
-          <div class="substep"><span class="sub-icon">🤖</span> Модели ИИ</div>
+          <div class="substep"><span class="sub-icon">🤖</span> {{ _('AI models') }}</div>
         </div>
       </div>
     </div>
@@ -168,16 +238,15 @@
   </div>
 </section>
 
-
 <section id="oku-approach">
-  <h2>Подход к разработке модели оценки кредитных убытков (ОКУ)</h2>
+  <h2>{{ _('Credit Loss Assessment Model (ОКУ) Development Approach') }}</h2>
   <div class="zigzag-container">
 
     <div class="zigzag-step left">
       <div class="step-content">
         <div class="step-number">01</div>
         <div class="step-icon">📊</div>
-        <div class="step-text">Разработка PD моделей</div>
+        <div class="step-text">{{ _('PD Models Development') }}</div>
       </div>
       <div class="connector down-right"></div>
     </div>
@@ -186,7 +255,7 @@
       <div class="step-content">
         <div class="step-number">02</div>
         <div class="step-icon">🔁</div>
-        <div class="step-text">Backtesting текущих моделей</div>
+        <div class="step-text">{{ _('Current Models Backtesting') }}</div>
       </div>
       <div class="connector down-left"></div>
     </div>
@@ -195,7 +264,7 @@
       <div class="step-content">
         <div class="step-number">03</div>
         <div class="step-icon">🧪</div>
-        <div class="step-text">Тест на соответствие модели данным</div>
+        <div class="step-text">{{ _('Model-to-Data Fit Test') }}</div>
       </div>
       <div class="connector down-right"></div>
     </div>
@@ -204,7 +273,7 @@
       <div class="step-content">
         <div class="step-number">04</div>
         <div class="step-icon">📂</div>
-        <div class="step-text">Анализ структуры данных</div>
+        <div class="step-text">{{ _('Data Structure Analysis') }}</div>
       </div>
       <div class="connector down-left"></div>
     </div>
@@ -213,7 +282,7 @@
       <div class="step-content">
         <div class="step-number">05</div>
         <div class="step-icon">📈</div>
-        <div class="step-text">Анализ изменчивости данных</div>
+        <div class="step-text">{{ _('Data Variability Analysis') }}</div>
       </div>
       <div class="connector down-right"></div>
     </div>
@@ -222,7 +291,7 @@
       <div class="step-content">
         <div class="step-number">06</div>
         <div class="step-icon">🧮</div>
-        <div class="step-text">Группировка и трансформация данных</div>
+        <div class="step-text">{{ _('Data Grouping and Transformation') }}</div>
       </div>
       <div class="connector down-left"></div>
     </div>
@@ -231,7 +300,7 @@
       <div class="step-content">
         <div class="step-number">07</div>
         <div class="step-icon">🤖</div>
-        <div class="step-text">Построение модели</div>
+        <div class="step-text">{{ _('Model Building') }}</div>
       </div>
       <div class="connector down-right"></div>
     </div>
@@ -240,7 +309,7 @@
       <div class="step-content">
         <div class="step-number">08</div>
         <div class="step-icon">🌪️</div>
-        <div class="step-text">Стресс-тестирование модели</div>
+        <div class="step-text">{{ _('Model Stress Testing') }}</div>
       </div>
       <div class="connector down-left"></div>
     </div>
@@ -249,7 +318,7 @@
       <div class="step-content">
         <div class="step-number">09</div>
         <div class="step-icon">📌</div>
-        <div class="step-text">Рекомендации и выводы</div>
+        <div class="step-text">{{ _('Recommendations and Conclusions') }}</div>
       </div>
     </div>
 
@@ -258,43 +327,43 @@
 
 
 <section id="loan-process">
-  <h2>Как работает наш процесс кредитования</h2>
+  <h2>{{ _('How our loan process works') }}</h2>
   <div class="flowchart">
 
     <!-- Верхняя линия -->
     <div class="row top-row">
       <div class="step">
         <div class="step-number">01</div>
-        <div class="step-text">Кредитная заявка</div>
+        <div class="step-text">{{ _('Loan application') }}</div>
         <div class="arrow">→</div>
       </div>
       <div class="step">
         <div class="step-number">02</div>
-        <div class="step-text">Выбор суммы и срока</div>
+        <div class="step-text">{{ _('Amount and term selection') }}</div>
         <div class="arrow">→</div>
       </div>
       <div class="step">
         <div class="step-number">03</div>
-        <div class="step-text">Кредитный скоринг</div>
+        <div class="step-text">{{ _('Credit scoring') }}</div>
         <div class="arrow">→</div>
       </div>
       <div class="step">
         <div class="step-number">04</div>
-        <div class="step-text">Расчет процентной ставки</div>
+        <div class="step-text">{{ _('Interest rate calculation') }}</div>
         <div class="arrow">→</div>
       </div>
     </div>
 
-    <!-- Ветка 05 (отдельно для левой и правой части) -->
+    <!-- Ветка 05 -->
     <div class="row branch-row">
       <div class="branch-left">
         <div class="step-number">05</div>
-        <div class="step-text">Клиент <strong>НЕ</strong> соглашается на ставку</div>
+        <div class="step-text">{{ _('Client <strong>DOES NOT</strong> accept the rate') }}</div>
         <div class="arrow down-left" style="font-size: 1.5rem;">↘</div>
       </div>
       <div class="branch-right">
         <div class="step-number">05</div>
-        <div class="step-text">Клиент соглашается на ставку</div>
+        <div class="step-text">{{ _('Client accepts the rate') }}</div>
         <div class="arrow" style="font-size: 1.5rem;">→</div>
       </div>
     </div>
@@ -304,126 +373,124 @@
       <div class="step return-step">
         <div class="arrow left-up" style="font-size: 1.5rem;">↖</div>
         <div class="step-number">02</div>
-        <div class="step-text">Выбор суммы и срока (повтор)</div>
+        <div class="step-text">{{ _('Amount and term selection (repeat)') }}</div>
       </div>
       <div class="step final-step">
         <div class="step-number">06</div>
-        <div class="step-text">Выдача кредита</div>
+        <div class="step-text">{{ _('Loan issuance') }}</div>
       </div>
     </div>
 
   </div>
 </section>
-
 
 
 <section id="team">
-  <h2>Наша команда</h2>
+  <h2>{{ _('Our Team') }}</h2>
   <div class="team">
     <div class="member">
-      <h4>Айбек Рыскулов</h4>
-      <p><strong>Роль:</strong> Старший партнёр, Risk-модельер</p>
-      <p><strong>Специализация:</strong> PD, LGD, EAD, согласование с аудиторами, AQR</p>
+      <h4>Aibek Ryskulov</h4>
+      <p><strong>{{ _('Role:') }}</strong> {{ _('Senior Partner, Risk Modeler') }}</p>
+      <p><strong>{{ _('Specialization:') }}</strong> {{ _('PD, LGD, EAD, auditor coordination, AQR') }}</p>
       <div class="project-highlight">
-        <h5>Проект: Внедрение моделей по МСФО 9</h5>
-        <p>Реализовано в 3 банках с активами > 1 млрд USD. Модели прошли аудит без нареканий.</p>
+        <h5>{{ _('Project:') }} {{ _('IFRS 9 Models Implementation') }}</h5>
+        <p>{{ _('Implemented in 3 banks with assets > $1B. Models passed audit without issues.') }}</p>
       </div>
     </div>
 
     <div class="member">
-      <h4>Эльмира Садыкова</h4>
-      <p><strong>Роль:</strong> Эксперт по стандартам IFRS</p>
-      <p><strong>Специализация:</strong> Трактовка сложных стандартов, документация, взаимодействие с аудиторами</p>
+      <h4>Elmira Sadykova</h4>
+      <p><strong>{{ _('Role:') }}</strong> {{ _('IFRS Standards Expert') }}</p>
+      <p><strong>{{ _('Specialization:') }}</strong> {{ _('Complex standards interpretation, documentation, auditor communication') }}</p>
       <div class="project-highlight">
-        <h5>Проект: Поддержка при внешнем аудите</h5>
-        <p>Подготовлены корректные трактовки стандартов IFRS 9, IAS 39, обеспечено соответствие требованиям EY и KPMG.</p>
+        <h5>{{ _('Project:') }} {{ _('External Audit Support') }}</h5>
+        <p>{{ _('Prepared correct interpretations of IFRS 9, IAS 39 standards, ensured compliance with EY and KPMG requirements.') }}</p>
       </div>
     </div>
 
     <div class="member">
-      <h4>Руслан Токтосунов</h4>
-      <p><strong>Роль:</strong> Data Scientist</p>
-      <p><strong>Специализация:</strong> Скоринг, ML-модели, залоги, прогноз оттока, оптимизация NPL</p>
+      <h4>Ruslan Toktosunov</h4>
+      <p><strong>{{ _('Role:') }}</strong> {{ _('Data Scientist') }}</p>
+      <p><strong>{{ _('Specialization:') }}</strong> {{ _('Scoring, ML models, collateral, churn prediction, NPL optimization') }}</p>
       <div class="project-highlight">
-        <h5>Проект: Кредитный скоринг на Python</h5>
-        <p>Разработана модель с ROC-AUC 0.83 для микрофинансовой организации, снижена просрочка на 12%.</p>
+        <h5>{{ _('Project:') }} {{ _('Python Credit Scoring') }}</h5>
+        <p>{{ _('Developed model with ROC-AUC 0.83 for microfinance organization, reduced delinquency by 12%.') }}</p>
       </div>
     </div>
 
     <div class="member">
-      <h4>Нурбек Калыков</h4>
-      <p><strong>Роль:</strong> Технический советник</p>
-      <p><strong>Специализация:</strong> Математическая логика, статистическая корректность, обучение команды</p>
+      <h4>Nurbek Kalykov</h4>
+      <p><strong>{{ _('Role:') }}</strong> {{ _('Technical Advisor') }}</p>
+      <p><strong>{{ _('Specialization:') }}</strong> {{ _('Mathematical logic, statistical correctness, team training') }}</p>
       <div class="project-highlight">
-        <h5>Проект: Статистическая валидация моделей</h5>
-        <p>Проведены back-testing, Gini, KS-статистика и stability анализ. Все метрики — в зелёной зоне.</p>
+        <h5>{{ _('Project:') }} {{ _('Statistical Model Validation') }}</h5>
+        <p>{{ _('Conducted back-testing, Gini, KS-statistics and stability analysis. All metrics in green zone.') }}</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="goals">
-  <h2>Цели и задачи</h2>
+  <section id="goals">
+  <h2>{{ _('Goals and Objectives') }}</h2>
   <div class="goals-list">
     <div class="goal-item">
-      <h3>🎯 Повышение точности прогнозов</h3>
-      <p>Снизить уровень просрочки и увеличить возвратность, применяя точные модели оценки риска и клиентского поведения.</p>
+      <h3>🎯 {{ _('Improving Prediction Accuracy') }}</h3>
+      <p>{{ _('Reduce delinquency rates and increase recovery by applying precise risk and customer behavior assessment models.') }}</p>
     </div>
 
     <div class="goal-item">
-      <h3>📊 Соответствие требованиям МСФО 9</h3>
-      <p>Обеспечить корректный расчёт ожидаемых кредитных убытков в соответствии с международными стандартами.</p>
+      <h3>📊 {{ _('IFRS 9 Compliance') }}</h3>
+      <p>{{ _('Ensure correct calculation of expected credit losses in accordance with international standards.') }}</p>
     </div>
 
     <div class="goal-item">
-      <h3>⚙️ Автоматизация принятия решений</h3>
-      <p>Оптимизировать процесс скоринга и андеррайтинга, снизив долю ручной обработки заявок.</p>
+      <h3>⚙️ {{ _('Decision Automation') }}</h3>
+      <p>{{ _('Optimize scoring and underwriting processes by reducing manual application processing.') }}</p>
     </div>
 
     <div class="goal-item">
-      <h3>🔍 Улучшение контроля и прозрачности</h3>
-      <p>Сделать модели интерпретируемыми и легко проверяемыми для внутренних и внешних проверок (аудиторов и регуляторов).</p>
+      <h3>🔍 {{ _('Improving Control and Transparency') }}</h3>
+      <p>{{ _('Make models interpretable and easily verifiable for internal and external audits (auditors and regulators).') }}</p>
     </div>
 
     <div class="goal-item">
-      <h3>📈 Поддержка стратегических решений</h3>
-      <p>Использовать аналитические инструменты и стресс-тестирование для управления портфелем и принятия решений на уровне топ-менеджмента.</p>
+      <h3>📈 {{ _('Supporting Strategic Decisions') }}</h3>
+      <p>{{ _('Use analytical tools and stress testing for portfolio management and executive-level decision making.') }}</p>
     </div>
 
     <div class="goal-item">
-      <h3>🧠 Развитие команды клиента</h3>
-      <p>Передать знания, обучить персонал и обеспечить долгосрочную поддержку внедрённых решений.</p>
+      <h3>🧠 {{ _('Client Team Development') }}</h3>
+      <p>{{ _('Transfer knowledge, train personnel and provide long-term support for implemented solutions.') }}</p>
     </div>
   </div>
 </section>
 
-
-
 <section id="how-it-works">
-  <h2>Как это работает</h2>
+  <h2>{{ _('How It Works') }}</h2>
   <div class="workflow">
     <div class="workflow-step">
       <div class="step-number">1</div>
-      <h3>Анализ бизнес-задачи</h3>
-      <p>Обсуждаем цели проекта, данные, требования аудиторов и особенности вашего рынка.</p>
+      <h3>{{ _('Business Task Analysis') }}</h3>
+      <p>{{ _('We discuss project goals, data, auditor requirements and your market specifics.') }}</p>
     </div>
     <div class="workflow-step">
       <div class="step-number">2</div>
-      <h3>Разработка модели</h3>
-      <p>Строим PD, LGD, EAD модели, кредитный скоринг или другие алгоритмы в зависимости от задачи.</p>
+      <h3>{{ _('Model Development') }}</h3>
+      <p>{{ _('We build PD, LGD, EAD models, credit scoring or other algorithms depending on the task.') }}</p>
     </div>
     <div class="workflow-step">
       <div class="step-number">3</div>
-      <h3>Валидация и согласование</h3>
-      <p>Тестируем точность модели, проводим stress-тесты, согласовываем с регуляторами и аудиторами.</p>
+      <h3>{{ _('Validation and Approval') }}</h3>
+      <p>{{ _('We test model accuracy, conduct stress-tests, coordinate with regulators and auditors.') }}</p>
     </div>
     <div class="workflow-step">
       <div class="step-number">4</div>
-      <h3>Внедрение и обучение</h3>
-      <p>Передаём код, документацию, проводим обучение команды и помогаем с внедрением.</p>
+      <h3>{{ _('Implementation and Training') }}</h3>
+      <p>{{ _('We transfer code and documentation, conduct team training and assist with implementation.') }}</p>
     </div>
   </div>
 </section>
+
 
 
   <section id="contacts" data-animate>
@@ -431,14 +498,14 @@
     <div class="contacts">
       <p>📞 <strong>Телефон:</strong> <a href="tel:+996708612794">+996 708 61 27 94</a></p>
       <p>✉️ <strong>Email:</strong> <a href="mailto:mamytalievmirbek2008@gmail.com">mamytalievmirbek2008@gmail.com</a></p>
-      <p>💬 Цена рассчитывается индивидуально после обсуждения технического задания.</p>
+      <p>💬 {{ _('The price is calculated individually after discussion.') }}.</p>
 
       <form id="contactForm" method="post" action="/send-message">
-        <input type="text" name="name" placeholder="Ваше имя" required />
-        <input type="email" name="email" placeholder="Email для связи" required />
-        <input type="tel" name="phone" placeholder="Номер телефона" required />
-        <textarea name="message" rows="4" placeholder="Ваше сообщение" required></textarea>
-        <button type="submit">Отправить</button>
+        <input type="text" name="name" placeholder="{{ _('Your name') }}" required />
+        <input type="email" name="email" placeholder="{{ _('Email for contact') }}" required />
+        <input type="tel" name="phone" placeholder="{{ _('phone') }}" required />
+        <textarea name="message" rows="4" placeholder="{{ _('Your message') }}" required></textarea>
+        <button type="submit">{{ _('Send') }}</button>
       </form>
     </div>
   </section>

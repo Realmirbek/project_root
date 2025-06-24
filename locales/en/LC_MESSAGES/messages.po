@@ -1,0 +1,13 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgid "Credit Risk Consulting Team"
+msgstr "Credit Risk Consulting Team"
+
+msgid "IFRS 9, credit scoring, and innovative models for your business"
+msgstr "IFRS 9, credit scoring, and innovative models for your business"
+
+msgid "Send"
+msgstr "Send"
