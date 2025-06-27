@@ -3,6 +3,10 @@
 * {
   box-sizing: border-box;
 }
+/* Базовые мобильные стили */
+html {
+  font-size: 14px; /* Уменьшаем базовый размер шрифта */
+}
 
 body {
   margin: 0;
@@ -11,7 +15,12 @@ body {
   color: #e6f1ff; /* Светлый текст */
   line-height: 1.6;
   padding-top: 60px;
+  overflow-x: hidden; /* Запрещаем горизонтальный скролл */
+  -webkit-text-size-adjust: 100%;
 }
+
+
+
 
 /* ===== Фиксированное меню НАД шапкой ===== */
 nav {
@@ -1103,4 +1112,118 @@ footer {
     max-width: 200px;
     margin: 0 auto;
   }
+}
+
+@media (max-width: 576px) {
+  .header-top {
+    padding: 25px 15px;
+  }
+
+  .main-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .header-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-button,
+  .contact-button.secondary {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  nav a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .linkedin-link {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    padding: 30px 15px !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 20px !important;
+  }
+
+  p, .card-desc, .case p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Карточки услуг */
+  .cards {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  /* Блок с фактами */
+  .about-facts {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 15px !important;
+  }
+
+  .fact-number {
+    font-size: 1.8rem !important;
+  }
+
+  .fact-label {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  form {
+    padding: 15px !important;
+  }
+
+  input, textarea, button[type="submit"] {
+    padding: 12px 15px !important;
+    font-size: 1rem !important;
+  }
+
+  textarea {
+    min-height: 120px !important;
+  }
+}
+
+/* Оптимизация для landscape-режима */
+@media (max-height: 500px) and (orientation: landscape) {
+  .header-top {
+    padding: 15px 0 !important;
+  }
+
+  .main-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 10px !important;
+  }
+}
+
+/* Улучшение читаемости на маленьких экранах */
+p, li {
+  line-height: 1.6 !important;
+}
+
+/* Уменьшение отступов */
+section {
+  padding: 40px 15px !important;
 }
