@@ -1711,169 +1711,143 @@ section {
   100% { transform: translateX(-50%); }
 }
 
-
-/* Базовые стили для всех устройств */
-.contacts {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-#contactForm {
+/* Базовые стили для навигации (десктоп) */
+nav {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-#contactForm input,
-#contactForm textarea {
-  padding: 12px;
-  border: 1px solid #64ffda;
-  background: #172a45;
-  color: white;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-#contactForm button {
-  padding: 12px 20px;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 30px;
   background: #0a192f;
-  color: #64ffda;
-  border: 1px solid #64ffda;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #ccd6f6;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
   border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
   transition: all 0.3s ease;
 }
 
-#contactForm button:hover {
-  background: #64ffda;
-  color: #0a192f;
+nav a:hover, nav a.active {
+  color: #64ffda;
+  background: rgba(100, 255, 218, 0.1);
 }
 
-/* Стили для phone-input-wrapper (если он есть в основной форме) */
-.phone-input-wrapper {
+.linkedin-link {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 6px;
 }
 
-/* Медиазапросы для мобильных устройств */
-@media (max-width: 768px) {
-  .contacts {
-    padding: 15px;
-  }
-
-  #contactForm input,
-  #contactForm textarea,
-  #contactForm button {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .phone-input-wrapper {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .country-select-wrapper {
-    width: 100%;
-  }
-
-  .phone-input-wrapper input[type="tel"] {
-    width: 100%;
-  }
+.linkedin-icon {
+  fill: #ccd6f6;
+  transition: fill 0.3s ease;
 }
 
-@media (max-width: 480px) {
-  .contacts {
-    padding: 10px;
-  }
-
-  #contactForm {
-    gap: 10px;
-  }
+.linkedin-link:hover .linkedin-icon {
+  fill: #64ffda;
 }
 
-
-
-@media (max-width: 768px) {
-  .bank-ticker-wrapper {
-    padding: 15px 0;
-  }
-
-  .bank-item {
-    font-size: 1.2rem;
-    padding: 0 15px;
-  }
-
-  .bank-divider {
-    font-size: 0.8rem;
-  }
+/* Языковой переключатель */
+.language-switcher {
+  position: relative;
+  margin-left: auto;
 }
 
-@media (max-width: 480px) {
-  .bank-item {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
+.language-current {
+  background: transparent;
+  border: 1px solid #64ffda;
+  color: #ccd6f6;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #172a45;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  padding: 5px 0;
+  min-width: 120px;
+  display: none;
+}
+
+.language-dropdown li a {
+  display: block;
+  padding: 8px 15px;
+  color: #ccd6f6;
+}
+
+.language-dropdown li a:hover {
+  background: rgba(100, 255, 218, 0.1);
+}
+
+/* Мобильная адаптация */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    gap: 10px;
     padding: 10px;
   }
 
   nav a {
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(100, 255, 218, 0.2);
-    width: 100%;
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+  }
+
+  nav a:last-child {
+    border-bottom: none;
+  }
+
+  .linkedin-link {
+    justify-content: center;
+    padding: 12px;
+    border: 1px solid rgba(100, 255, 218, 0.3);
+    border-radius: 4px;
+    margin: 5px 0;
   }
 
   .language-switcher {
+    margin-left: 0;
     margin-top: 10px;
+  }
+
+  .language-current {
     width: 100%;
+    justify-content: center;
+  }
+
+  .language-dropdown {
+    width: 100%;
+    right: auto;
+    left: 0;
   }
 }
 
-
-@media (max-width: 900px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* Анимация для выпадающего меню */
+.language-switcher:hover .language-dropdown {
+  display: block;
 }
 
-@media (max-width: 600px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .card {
-    padding: 15px;
-  }
-}
-
-
-/* Адаптация всех секций */
+/* Для мобильных - показывать по клику */
 @media (max-width: 768px) {
-  section {
-    padding: 30px 15px;
+  .language-switcher:hover .language-dropdown {
+    display: none;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  .header-text {
-    font-size: 1rem;
-  }
-
-  .main-title {
-    font-size: 1.8rem;
-  }
-
-  .company-name {
-    font-size: 1.2rem;
+  #currentLanguageBtn.clicked + .language-dropdown {
+    display: block;
   }
 }

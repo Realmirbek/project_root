@@ -800,5 +800,25 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const languageBtn = document.getElementById('currentLanguageBtn');
+
+  // Для мобильных устройств
+  if (window.innerWidth <= 768) {
+    languageBtn.addEventListener('click', function() {
+      this.classList.toggle('clicked');
+    });
+  }
+
+  // Закрытие при клике вне меню
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.language-switcher')) {
+      languageBtn.classList.remove('clicked');
+    }
+  });
+});
+</script>
 </body>
 </html>
