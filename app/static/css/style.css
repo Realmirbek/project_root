@@ -1711,12 +1711,13 @@ section {
   100% { transform: translateX(-50%); }
 }
 
-/* Базовые стили для навигации (десктоп) */
+/* Базовые стили для навигации */
 nav {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 15px 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
   background: #0a192f;
   position: sticky;
   top: 0;
@@ -1730,124 +1731,71 @@ nav a {
   padding: 8px 12px;
   border-radius: 4px;
   transition: all 0.3s ease;
+  flex: 1 0 calc(25% - 20px); /* 4 элемента в строке */
+  text-align: center;
+  box-sizing: border-box;
 }
 
-nav a:hover, nav a.active {
-  color: #64ffda;
-  background: rgba(100, 255, 218, 0.1);
-}
-
+/* Специальные стили для LinkedIn и языкового переключателя */
 .linkedin-link {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
 }
 
-.linkedin-icon {
-  fill: #ccd6f6;
-  transition: fill 0.3s ease;
-}
-
-.linkedin-link:hover .linkedin-icon {
-  fill: #64ffda;
-}
-
-/* Языковой переключатель */
 .language-switcher {
   position: relative;
-  margin-left: auto;
+  flex: 1 0 calc(25% - 20px);
 }
 
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  nav {
+    gap: 8px;
+    padding: 10px;
+  }
+
+  nav a {
+    flex: 1 0 calc(25% - 8px); /* 4 элемента в строке */
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+
+  /* Переносим LinkedIn и языковой переключатель на вторую строку */
+  .linkedin-link,
+  .language-switcher {
+    order: 1; /* Перемещаем во вторую строку */
+  }
+
+  /* Остальные элементы в первой строке */
+  nav a:not(.linkedin-link):not(.language-switcher) {
+    order: 0;
+  }
+}
+
+/* Стили для выпадающего меню языка (остаются без изменений) */
 .language-current {
+  width: 100%;
+  text-align: center;
   background: transparent;
   border: 1px solid #64ffda;
   color: #ccd6f6;
   padding: 8px 12px;
   border-radius: 4px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
 .language-dropdown {
   position: absolute;
-  top: 100%;
-  right: 0;
+  width: 100%;
   background: #172a45;
   border: 1px solid #64ffda;
   border-radius: 4px;
-  padding: 5px 0;
-  min-width: 120px;
+  z-index: 10;
   display: none;
 }
 
-.language-dropdown li a {
-  display: block;
-  padding: 8px 15px;
-  color: #ccd6f6;
-}
-
-.language-dropdown li a:hover {
-  background: rgba(100, 255, 218, 0.1);
-}
-
-/* Мобильная адаптация */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  nav a {
-    display: block;
-    padding: 10px 15px;
-    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
-  }
-
-  nav a:last-child {
-    border-bottom: none;
-  }
-
-  .linkedin-link {
-    justify-content: center;
-    padding: 12px;
-    border: 1px solid rgba(100, 255, 218, 0.3);
-    border-radius: 4px;
-    margin: 5px 0;
-  }
-
-  .language-switcher {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .language-current {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .language-dropdown {
-    width: 100%;
-    right: auto;
-    left: 0;
-  }
-}
-
-/* Анимация для выпадающего меню */
 .language-switcher:hover .language-dropdown {
   display: block;
-}
-
-/* Для мобильных - показывать по клику */
-@media (max-width: 768px) {
-  .language-switcher:hover .language-dropdown {
-    display: none;
-  }
-
-  #currentLanguageBtn.clicked + .language-dropdown {
-    display: block;
-  }
 }

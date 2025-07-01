@@ -803,19 +803,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+  // Активация выпадающего меню языка
   const languageBtn = document.getElementById('currentLanguageBtn');
 
-  // Для мобильных устройств
-  if (window.innerWidth <= 768) {
-    languageBtn.addEventListener('click', function() {
-      this.classList.toggle('clicked');
-    });
-  }
+  languageBtn.addEventListener('click', function() {
+    document.getElementById('languageDropdown').style.display =
+      document.getElementById('languageDropdown').style.display === 'block' ? 'none' : 'block';
+  });
 
   // Закрытие при клике вне меню
   document.addEventListener('click', function(e) {
     if (!e.target.closest('.language-switcher')) {
-      languageBtn.classList.remove('clicked');
+      document.getElementById('languageDropdown').style.display = 'none';
     }
   });
 });
