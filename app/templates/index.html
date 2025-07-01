@@ -1,27 +1,147 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta charset="UTF-8" />
-  <title>{{ _('Credit Risk Consulting Team') }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ _('business_decisions_title') }} - {{ _('Credit Risk Consulting Team') }}</title>
   <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
 
-<!-- Добавленный блок с заголовком и кнопкой -->
+<!-- Верхний блок с заголовком -->
 <div class="header-top">
-  <h1 class="main-title">{{ _('Credit Risk Consulting Team') }}</h1>
-  <div class="header-buttons">
-    <a href="#contacts" class="contact-button">{{ _('Contacts') }}</a>
-    <a href="#contacts" class="contact-button secondary">{{ _('Request Consultation') }}</a>
+  <h1 class="main-title">
+    {{ _('business_decisions_title') }}<br>
+    <span class="company-name">{{ _('Credit Risk Consulting Team') }}</span>
+  </h1>
+
+<div class="header-buttons">
+  <div class="quick-contact-form">
+    <input type="text" id="quickName" placeholder="{{ _('Your name') }}" required />
+
+    <div class="phone-input-wrapper">
+      <div class="country-select-wrapper">
+        <select id="countrySelect" class="country-select">
+          <option value="+996" data-flag="https://flagcdn.com/kg.svg">KG +996</option>
+          <option value="+7" data-flag="https://flagcdn.com/ru.svg">RU +7</option>
+          <option value="+7" data-flag="https://flagcdn.com/kz.svg">KZ +7</option>
+          <option value="+998" data-flag="https://flagcdn.com/uz.svg">UZ +998</option>
+        </select>
+        <div class="country-select-display">
+          <img src="https://flagcdn.com/kg.svg" id="countryFlag">
+          <span id="countryCode">+996</span>
+        </div>
+      </div>
+      <input type="tel" id="quickPhone" placeholder="771 123 456" required>
+    </div>
+
+    <button id="quickSend" class="contact-button secondary">{{ _('Send') }}</button>
   </div>
 </div>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const countrySelect = document.getElementById('countrySelect');
+  const countryFlag = document.getElementById('countryFlag');
+  const countryCode = document.getElementById('countryCode');
+  const phoneInput = document.getElementById('quickPhone');
+  const sendButton = document.getElementById('quickSend');
+
+  // Правила для номеров
+  const phoneRules = {
+    '+996': { length: 9, example: '771123456' },
+    '+7': { length: 10, example: '9123456789' },
+    '+998': { length: 9, example: '901234567' }
+  };
+
+  // Обновляем отображение при выборе страны
+  countrySelect.addEventListener('change', function() {
+    const selectedOption = this.options[this.selectedIndex];
+    countryFlag.src = selectedOption.dataset.flag;
+    countryCode.textContent = this.value;
+
+    // Обновляем placeholder
+    phoneInput.placeholder = phoneRules[this.value].example.match(/(\d{3})(\d{3})(\d+)/).slice(1).join(' ');
+  });
+
+  // Форматирование номера телефона
+  phoneInput.addEventListener('input', function() {
+    const countryCode = countrySelect.value;
+    const rule = phoneRules[countryCode];
+
+    // Оставляем только цифры
+    let numbers = this.value.replace(/\D/g, '');
+
+    // Обрезаем если больше нужной длины
+    if (numbers.length > rule.length) {
+      numbers = numbers.slice(0, rule.length);
+    }
+
+    // Форматируем с пробелами
+    if (countryCode === '+996' && numbers.length > 3) {
+      this.value = numbers.replace(/(\d{3})(\d{3})(\d+)/, '$1 $2 $3');
+    } else if (countryCode === '+7' && numbers.length > 3) {
+      this.value = numbers.replace(/(\d{3})(\d{3})(\d{4})/, '$1 $2 $3');
+    } else {
+      this.value = numbers;
+    }
+  });
+
+  // Отправка формы
+sendButton.addEventListener('click', async function() {
+    const name = document.getElementById('quickName').value.trim();
+    const phone = phoneInput.value.replace(/\D/g, '');
+    const country = countrySelect.value;
+    const rule = phoneRules[country];
+
+    // Валидация
+    if (!name) {
+        alert('Пожалуйста, введите ваше имя');
+        return;
+    }
+
+    if (phone.length !== rule.length) {
+        alert(`Номер должен содержать ${rule.length} цифр. Пример: ${rule.example.match(/(\d{3})(\d{3})(\d+)/).slice(1).join(' ')}`);
+        return;
+    }
+
+    // Отправка данных
+    try {
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append('phone', country + phone);
+
+        const response = await fetch('/send-message/', { // Обратите внимание на слэш в конце
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json' // Важно для определения AJAX-запроса
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(await response.text());
+        }
+
+        const result = await response.json();
+        alert(result.message);
+
+        if (result.success) {
+            document.getElementById('quickName').value = '';
+            phoneInput.value = '';
+        }
+    } catch (error) {
+        console.error('Ошибка отправки:', error);
+        alert('Ошибка при отправке. Пожалуйста, попробуйте еще раз.');
+    }
+    });
+});
+</script>
+
+</div>
+
 <header class="page-header">
-  <div class="language-switch">
-    <a href="/lang/ru">🇷🇺 {{ _('RU') }}</a> | <a href="/lang/en">🇺🇸 {{ _('EN') }}</a>
-  </div>
   <div class="header-content">
     <p class="header-text">{{ _('IFRS 9, credit scoring, and innovative models for your business') }}</p>
   </div>
@@ -39,7 +159,25 @@
       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
     </svg>
     LinkedIn
-  </a>
+    </a>
+
+    <!-- Языковой переключатель с выпадающим меню -->
+  <div class="language-switcher">
+    <button class="language-current" aria-label="Change language" id="currentLanguageBtn">
+      {% if lang == 'ru' %}
+        🇷🇺 Русский
+      {% elif lang == 'en' %}
+        en English
+      {% else %}
+        Ru or En
+      {% endif %}
+      <span class="dropdown-arrow">▼</span>
+    </button>
+    <ul class="language-dropdown" id="languageDropdown">
+      <li><a href="#" data-lang="ru">🇷🇺 Русский</a></li>
+      <li><a href="#" data-lang="en">🇺🇸 English</a></li>
+    </ul>
+  </div>
 </nav>
 
 <main>
@@ -72,6 +210,34 @@
 
 
 
+
+<div class="bank-ticker-wrapper">
+  <div class="bank-ticker">
+    <div class="bank-ticker-content">
+      <span class="bank-item">Халыкбанк</span>
+      <span class="bank-divider">◆</span>
+      <span class="bank-item">Bank of Baku</span>
+      <span class="bank-divider">◆</span>
+      <span class="bank-item">Ahli Bank</span>
+      <span class="bank-divider">◆</span>
+      <span class="bank-item">Nurbank</span>
+      <span class="bank-item">Заманбанк</span>
+      <span class="bank-item">ФФСПХ</span>
+      <span class="bank-item">KIDF</span>
+      <!-- Дублируем для бесшовности -->
+      <span class="bank-item">Халыкбанк</span>
+      <span class="bank-divider">◆</span>
+      <span class="bank-item">Bank of Baku</span>
+      <span class="bank-divider">◆</span>
+      <span class="bank-item">Ahli Bank</span>
+      <span class="bank-divider">◆</span>
+      <span class="bank-item">Nurbank</span>
+      <span class="bank-item">Заманбанк</span>ч
+      <span class="bank-item">ФФСПХ</span>
+      <span class="bank-item">KIDF</span>
+    </div>
+  </div>
+</div>
 
 <!-- Секция "Services" -->
 <section id="services" data-animate>
@@ -456,7 +622,7 @@
       <p>✉️ <strong>Email:</strong> <a href="mailto:mamytalievmirbek2008@gmail.com">mamytalievmirbek2008@gmail.com</a></p>
       <p>💬 {{ _('The price is calculated individually after discussion.') }}.</p>
 
-      <form id="contactForm" method="post" action="/send-message">
+      <form id="contactForm">
         <input type="text" name="name" placeholder="{{ _('Your name') }}" required />
         <input type="email" name="email" placeholder="{{ _('Email for contact') }}" required />
         <input type="tel" name="phone" placeholder="{{ _('phone') }}" required />
@@ -486,6 +652,12 @@
     observer.observe(el);
   });
 
+    // Добавьте в ваш существующий скрипт анимации
+  const bankCarousel = document.querySelector('.banks-carousel');
+  if (bankCarousel) {
+    observer.observe(bankCarousel);
+  }
+
   // Форма - заглушка
 
 
@@ -501,45 +673,132 @@
 </script>
 
 <script>
-  document.getElementById("contactForm").addEventListener("submit", async function(e) {
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
     e.preventDefault();
 
     const form = e.target;
-    const email = form.email.value.trim();
-    const phone = form.phone.value.trim();
-
-    const emailPattern = /^[\w\.-]+@gmail\.com$/;
-    const phonePattern = /^0\d{9}$/;
-
-    if (!emailPattern.test(email)) {
-      alert("Введите корректный email.");
-      return;
-    }
-
-    if (!phonePattern.test(phone)) {
-      alert("Введите корректный номер телефона. должен начинаться с 0");
-      return;
-    }
-
-
-
     const formData = new FormData(form);
+    const phoneInput = form.querySelector('input[name="phone"]');
 
-    const response = await fetch("/send-message", {
-      method: "POST",
-      body: formData
+    // Получаем и форматируем телефон
+    let phone = phoneInput.value.replace(/\D/g, '');
+
+    // Автоматически определяем код страны
+    if (!phone.startsWith('+')) {
+        if (phone.length === 9) {
+            phone = '+996' + phone; // Кыргызстан
+        } else if (phone.length === 10) {
+            phone = '+7' + phone; // Россия/Казахстан
+        } else if (phone.length === 9 && phone.startsWith('9')) {
+            phone = '+998' + phone; // Узбекистан
+        }
+    }
+
+    // Валидация телефона
+    if (!phone.match(/^(\+996\d{9}|\+7\d{10}|\+998\d{9})$/)) {
+        alert('Пожалуйста, введите номер в формате:\nКыргызстан: 771123456\nРоссия/Казахстан: 9123456789\nУзбекистан: 901234567');
+        return;
+    }
+
+    // Валидация других полей
+    if (!formData.get('name') || !formData.get('email') || !formData.get('message')) {
+        alert('Пожалуйста, заполните все обязательные поля');
+        return;
+    }
+
+    try {
+        // Обновляем телефон в FormData
+        formData.set('phone', phone);
+
+        const response = await fetch("/send-message/", {  // Обратите внимание на слэш в конце
+            method: "POST",
+            body: formData,
+            headers: {
+                'Accept': 'application/json' // Важно для корректной обработки на сервере
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(await response.text());
+        }
+
+        const result = await response.json();
+        alert(result.message);
+
+        if (result.success) {
+            form.reset();
+        }
+    } catch (error) {
+        const errorMsg = error.message || 'Неизвестная ошибка';
+        console.error('Ошибка отправки:', error);
+        alert(`Ошибка при отправке: ${errorMsg}`);
+    }
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const currentBtn = document.getElementById('currentLanguageBtn');
+  const dropdown = document.getElementById('languageDropdown');
+
+  // Обработчик выбора языка
+  dropdown.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const lang = this.getAttribute('data-lang');
+
+      // Устанавливаем куку
+      document.cookie = `lang=${lang};path=/;max-age=3600`;
+
+      // Обновляем текст кнопки
+      if (lang === 'ru') {
+        currentBtn.innerHTML = '🇷🇺 Русский <span class="dropdown-arrow">▼</span>';
+      } else {
+        currentBtn.innerHTML = '🇺🇸 English <span class="dropdown-arrow">▼</span>';
+      }
+
+      // Перезагружаем страницу для применения перевода
+      window.location.reload();
     });
+  });
 
-    const result = await response.json();
-    alert(result.message);
-
-    if (result.success) {
-      form.reset();
+  // Закрытие меню при клике вне его
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.language-switcher')) {
+      dropdown.style.display = 'none';
     }
   });
 
+  // Переключение меню
+  currentBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  });
+});
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.querySelector('.banks-carousel');
+  const banks = document.querySelectorAll('.bank-name');
 
+  // Добавляем индексы для удобства
+  banks.forEach((bank, i) => {
+    bank.style.setProperty('--i', i);
+    bank.addEventListener('click', () => {
+      alert(`Выбрано: ${bank.textContent}`);
+    });
+  });
+
+  // Пауза при наведении
+  carousel.addEventListener('mouseenter', () => {
+    carousel.style.animationPlayState = 'paused';
+  });
+
+  carousel.addEventListener('mouseleave', () => {
+    carousel.style.animationPlayState = 'running';
+  });
+});
+</script>
 </body>
 </html>

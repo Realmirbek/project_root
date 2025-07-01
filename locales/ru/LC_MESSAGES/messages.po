@@ -24,8 +24,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "business_decisions_title"
+msgstr "Помогаем бизнесу принимать точные и прибыльные решения на основе данных - быстро и с учетом рисков"
+
 msgid "Credit Risk Consulting Team"
 msgstr "Команда по кредитному риск-консалтингу"
+
+msgid "Request Consultation"
+msgstr "Заказать консультацию"
 
 msgid "IFRS 9, credit scoring, and innovative models for your business"
 msgstr "МСФО 9, кредитный скоринг и инновационные модели для вашего бизнеса"
@@ -378,3 +384,4 @@ msgstr "Отправить"
 
 msgid "The price is calculated individually after discussion"
 msgstr "The price is calculated individually after discussion"
+

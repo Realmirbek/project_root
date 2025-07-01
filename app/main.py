@@ -1,17 +1,26 @@
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from app.routers import pages, contact
+from app.routers import pages
 import os
 from fastapi.responses import HTMLResponse
 import gettext
+from fastapi.middleware.cors import CORSMiddleware
 
 
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://127.0.0.1:8000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 app.include_router(pages.router)
-app.include_router(contact.router)
+
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LOCALES_DIR = os.path.join(BASE_DIR, '..', 'locales')

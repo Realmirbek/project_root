@@ -12,8 +12,15 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+
+msgid "business_decisions_title"
+msgstr "Helping businesses make accurate, profitable data-driven decisions - quickly and with significant risk"
+
 msgid "Credit Risk Consulting Team"
 msgstr "Credit Risk Consulting Team"
+
+msgid "Request Consultation"
+msgstr "Request Consultation"
 
 msgid "IFRS 9, credit scoring, and innovative models for your business"
 msgstr "IFRS 9, credit scoring, and innovative models for your business"
@@ -365,3 +372,4 @@ msgstr "Send"
 
 msgid "The price is calculated individually after discussion"
 msgstr "The price is calculated individually after discussion"
+
